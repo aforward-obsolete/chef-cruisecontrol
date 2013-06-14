@@ -1,0 +1,5 @@
+<cruisecontrol>
+<% node[:cruisecontrol][:projects].each do |project_name| %>
+<%=  render "#{project_name}.xml.erb" %>
+<% end %>
+</cruisecontrol>
